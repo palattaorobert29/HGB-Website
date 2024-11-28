@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College School Admission Form</title>
+    <link rel="stylesheet" href="enroll.css">
+</head>
+<body>
+    <div class="container">
+        <h1>College School Admission Form</h1>
+        <p>Enter your admission information below</p>
+        <form action="/submit-admission" method="POST" enctype="multipart/form-data">
+            
+        
+            <div class="section-title">Personal Details</div>
+            <div class="form-group">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+
+        
+            <div class="section-title">Program Selection</div>
+            <div class="form-group">
+                <label for="program">Program Applied For:</label>
+                <select id="program" name="program" required>
+                    <option value="BSIT">BSIT</option>
+                    <option value="BSBA">BSBA</option>
+                    <option value="BSED">BSED</option>
+                    <option value="BEED">BEED</option>
+                    <option value="BSCRIM">BSCRIM</option>
+                    <option value="MSHM">BSHM</option>
+                </select>
+            </div>
+
+            
+            <div class="section-title">Educational Background</div>
+            <div class="form-group">
+                <label for="high-school">High School Name:</label>
+                <input type="text" id="high-school" name="high-school" required>
+            </div>
+            <div class="form-group">
+                <label for="high-school-year">Year Graduated from High School:</label>
+                <input type="number" id="high-school-year" name="high-school-year" placeholder="Enter Year of Graduation" required>
+            </div>
+            <div class="form-group">
+                <label for="high-school-address">High School Address:</label>
+                <input type="text" id="high-school-address" name="high-school-address" required>
+            </div>
+
+    
+            <div class="section-title">Parent/Guardian Information</div>
+            <div class="form-group">
+                <label for="parent-name">Parent/Guardian Name:</label>
+                <input type="text" id="parent-name" name="parent-name" required>
+            </div>
+            <div class="form-group">
+                <label for="parent-phone">Parent/Guardian Phone Number:</label>
+                <input type="tel" id="parent-phone" name="parent-phone" required>
+            </div>
+            <div class="form-group">
+                <label for="parent-email">Parent/Guardian Email Address:</label>
+                <input type="email" id="parent-email" name="parent-email" required>
+            </div>
+
+            
+            <div class="section-title">Emergency Contact Information</div>
+            <div class="form-group">
+                <label for="emergency-name">Emergency Contact Name:</label>
+                <input type="text" id="emergency-name" name="emergency-name" required>
+            </div>
+            <div class="form-group">
+                <label for="emergency-phone">Emergency Contact Phone Number:</label>
+                <input type="tel" id="emergency-phone" name="emergency-phone" required>
+            </div>
+
+            
+            <div class="section-title">Upload Documents</div>
+            <div class="form-group">
+                <label for="birth-certificate">Upload Birth Certificate:</label>
+                <input type="file" id="birth-certificate" name="birth-certificate" accept=".jpg,.jpeg,.png,.pdf" required>
+            </div>
+            <div class="form-group">
+                <label for="high-school-transcript">Upload High School Transcript:</label>
+                <input type="file" id="high-school-transcript" name="high-school-transcript" accept=".jpg,.jpeg,.png,.pdf" required>
+            </div>
+
+        
+            <div class="section-title">Payment Information</div>
+            <div class="form-group">
+                <label for="payment-amount">Amount to Pay:</label>
+                <input type="number" id="payment-amount" name="payment-amount" value="" readonly>
+            </div>
+            <div class="form-group">
+                <label for="payment-method">Select Payment Method:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="Credit Card">Credit Card</option>
+                    <option value="Bank Transfer">Bank Transfer</option>
+                    <option value="PayPal">PayPal</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="payment-reference">Payment Reference Number:</label>
+                <input type="text" id="payment-reference" name="payment-reference" placeholder="Enter payment reference number (if any)" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+
+        <div class="form-footer">
+            <a href="/Lesson3/content/mainPage/index.html" class="Back to Home-btn">Back to Home</a>
+        </div>
+    
+        <div class="form-footer">
+            <p>Thank you for applying! We will contact you soon.</p>
+        </div>
+    </div>
+</body>
+</html>
+<script src="/Lesson3/content/mainPage/index.html"></script>

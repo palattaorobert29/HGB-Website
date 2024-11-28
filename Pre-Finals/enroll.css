@@ -1,0 +1,162 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0099FF, #66CCFF); /* Blue gradient background */
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff; /* White background for form container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #003366; /* Dark blue header */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle effect */
+}
+
+p {
+    text-align: center;
+    color: #444;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #005C99; /* Medium blue for section titles */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #0099FF; /* Light blue border */
+    padding-bottom: 5px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    font-size: 1em;
+    color: #003366; /* Dark blue for labels */
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #66CCFF; /* Light blue border for inputs */
+    border-radius: 8px;
+    font-size: 1em;
+    color: #333;
+    background-color: #f1f9ff; /* Light blue background for inputs */
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #0099FF; /* Dark blue border on focus */
+    outline: none;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Buttons */
+button.submit-btn {
+    background-color: #005C99; /* Medium blue button */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button.submit-btn:hover {
+    background-color: #003366; /* Darker blue for hover */
+}
+
+/* File Inputs */
+input[type="file"] {
+    padding: 10px;
+    border: 2px solid #66CCFF; /* Light blue border */
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #f1f9ff;
+}
+
+/* Footer */
+.form-footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form-footer a {
+    color: #005C99; /* Medium blue for links */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+    color: #003366; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    button.submit-btn {
+        font-size: 1.1em;
+    }
+}
